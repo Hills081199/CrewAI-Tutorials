@@ -7,11 +7,11 @@ A production-style example demonstrating all **6 key elements** that make AI age
 ## 📁 Project Structure
 
 ```
-├── crewai_example.py     # Main pipeline script
+├── main.py     # Main pipeline script
 ├── research_output.md    # Auto-generated: raw research report
 ├── draft_blog.md         # Auto-generated: first blog draft
 ├── final_blog.md         # Auto-generated: polished final post
-├── crew_run.log          # Auto-generated: full execution log
+├── crew_run.log.txt       # Auto-generated: full execution log
 └── README.md             # This file
 ```
 

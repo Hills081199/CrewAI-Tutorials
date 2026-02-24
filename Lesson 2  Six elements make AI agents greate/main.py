@@ -18,8 +18,9 @@ import dotenv
 dotenv.load_dotenv()  # Load environment variables from .env file
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
+
 # LLM config
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.7, openai_api_key=openai_api_key)
+llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7, openai_api_key=openai_api_key)
 
 # Tools (element 3)
 # SerperDevTool provides real-time Google Search capability.
@@ -27,7 +28,7 @@ llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.7, openai_api_key=openai_a
 # need to search the web; it only uses the researcher's output.
 # Requires SERPER_API_KEY environment variable.
 search_tool = SerperDevTool(
-    n_results = 10, # retrun top 10 search results per query
+    n_results = 10, # return top 10 search results per query
     country="us", # target English language results
     locale="en"
 )
